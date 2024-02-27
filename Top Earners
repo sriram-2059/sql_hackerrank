@@ -1,0 +1,5 @@
+SELECT (salary * months) as max_salary, count(*)
+from Employee
+group by max_salary
+order by max_salary desc
+limit 1;
